@@ -1,0 +1,177 @@
+{
+  "categorias": [
+    {
+      "titulo": "Animações",
+      "link": "https://www.youtube.com/playlist?list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Ver mais",
+        "url": "https://www.youtube.com/playlist?list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX"
+      },
+      "videos": [
+        {
+          "titulo": "Florescer Espiritual 2020 | Trailer oficial do evento - League of Legends",
+          "url": "https://youtu.be/w1DUw6LehwM"
+        },
+        {
+          "titulo": "Irmãos da Lâmina Manchada | Animação Florescer Espiritual 2020 - League of Legends",
+          "url": "https://www.youtube.com/watch?v=4eNjKhwXIWg&list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX&index=2&t=0s"
+        },
+        {
+          "titulo": "O caminho, uma lenda ioniana",
+          "url": "https://www.youtube.com/watch?v=6AJl0-luB8Y&list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX&index=4"
+        },
+        {
+          "titulo": "Boas-Vindas a Bordo | Trailer de animação Odisseia - League of Legends",
+          "url": "https://www.youtube.com/watch?v=HevLl54L-Dg&list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX&index=24"
+        },
+        {
+          "titulo": "Tales of Runeterra: Bilgewater | “Double-Double Cross”",
+          "url": "https://www.youtube.com/watch?v=lbJhZW-iN0s&list=PLbAFXJC0J5GavJUu2hzIPBzFYxbIc8_yW&index=4"
+        },
+        {
+          "titulo": "Contos da Névoa Negra: O Tormento",
+          "url": "https://www.youtube.com/watch?v=YS18HWFvbW4&list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX&index=45"
+        }        
+      ]
+    },
+    {
+      "titulo": "Skins",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Ver mais",
+        "url": "https://www.youtube.com/playlist?list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX"
+      },
+      "videos": [
+        {
+          "titulo": "Velho Oeste 2020: Duelo com o Diabo | Trailer oficial de skins - League of Legends",
+          "url": "https://www.youtube.com/watch?v=U5_b3UG40-4&list=PLorRHLEoxRILsT028BJCtgRXCYaX9XkHX&index=7"
+        },
+        {
+          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+        },
+        {
+          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
+          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+        },
+        {
+          "titulo": "API: Dicionário do Programador",
+          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+        }, 
+        {
+          "titulo": "Usando Git Direito",
+          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+        }
+      ]
+    },
+    {
+      "titulo": "Data Science e Inteligência Artificial",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      },
+      "videos": [
+        {
+          "titulo": "Teste de Turing",
+          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+        },
+        {
+          "titulo": "O que é Data Science?",
+          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        },
+        {
+          "titulo": "Melhor forma de aprender Python",
+          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        },
+        {
+          "titulo": "Como ingressar no mercado de Data Science?",
+          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Gattaca",
+          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+        },
+        {
+          "titulo": "A Chegada",
+          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+        },
+        {
+          "titulo": "Feitiço do Tempo",
+          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "titulo": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "titulo": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "titulo": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "titulo": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "titulo": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+      ]
+    }
+  ]
+}
