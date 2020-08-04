@@ -1,12 +1,13 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 
 function ButtonLink(props) {
-
-    return (
-        <a href={props.href} className={props.className}>
-        {props.children}
-        </a>
+  return (
+    <a href={props.href} className={props.className}>
+      {props.children}
+    </a>
   );
 }
 
-export default ButtonLink; 
+export default ButtonLink;

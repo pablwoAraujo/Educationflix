@@ -1,105 +1,127 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
+import categoriasRepositories from '../../../repositories/categorias';
+
+import {
+  StyledLiItem, StyledLi, Dot, FormWrapper, StyledButtonLink,
+} from '../styles';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
-    descricao: '',
-    cor: '',
+    titulo: '',
+    cor: '#FF0000',
+    link_extra: {
+      text: '',
+      url: '',
+    },
   };
 
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'https://pablwo-aluraflix.herokuapp.com/categorias';
-      fetch(URL)
-        .then(async (respostaDoServer) => {
-          if (respostaDoServer.ok) {
-            const resposta = await respostaDoServer.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
+    categoriasRepositories.getAll()
+      .then((categoriasSalvas) => setCategorias(categoriasSalvas));
   }, []);
 
   return (
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.nome}
+        {values.titulo}
       </h1>
 
-      <form onSubmit={function handleSubmit(info) {
-        info.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
+      <FormWrapper>
 
-        setValues(valoresIniciais);
-      }}
-      >
+        <form onSubmit={function handleSubmit(info) {
+          info.preventDefault();
 
-        <FormField
-          label="Nome da Categoria"
-          type="text"
-          name="nome"
-          value={values.nome}
-          onChange={handleChange}
-        />
+          categoriasRepositories.insert({
+            titulo: values.titulo,
+            cor: values.cor,
+            link_extra: {
+              text: values.text,
+              url: values.url,
+            },
+          });
 
-        <FormField
-          label="Descrição"
-          type="textarea"
-          name="descricao"
-          value={values.descricao}
-          onChange={handleChange}
-        />
+          setCategorias([
+            ...categorias,
+            values,
+          ]);
 
-        <FormField
-          label="Cor"
-          type="color"
-          name="cor"
-          value={values.cor}
-          onChange={handleChange}
-        />
+          clearForm();
+        }}
+        >
 
-        <Button>Cadastrar</Button>
-      </form>
+          <FormField
+            label="Nome da Categoria"
+            type="text"
+            name="titulo"
+            value={values.titulo}
+            onChange={handleChange}
+          />
 
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.id}`}>
-            {categoria.titulo}
-            {categoria.nome}
-          </li>
-        ))}
-      </ul>
+          <FormField
+            label="Text"
+            type="text"
+            name="text"
+            value={values.text}
+            onChange={handleChange}
+          />
 
-      <Link to="/">
-        Home
-      </Link>
+          <FormField
+            label="Url"
+            type="text"
+            name="url"
+            value={values.url}
+            onChange={handleChange}
+          />
+
+          <FormField
+            label="Cor"
+            type="color"
+            name="cor"
+            value={values.cor}
+            onChange={handleChange}
+          />
+
+          <Button>Cadastrar</Button>
+
+          <br />
+          <br />
+          <br />
+
+          <StyledButtonLink to="/">
+            Home
+          </StyledButtonLink>
+        </form>
+
+        {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+        )}
+
+        <StyledLi>
+          <>
+            <h2>Categorias Registradas:</h2>
+
+            {categorias.map((categoria) => (
+              <StyledLiItem key={`${categoria.titulo}${categoria.indice}`}>
+                <Dot />
+                <span>{categoria.titulo}</span>
+              </StyledLiItem>
+            ))}
+          </>
+        </StyledLi>
+
+      </FormWrapper>
+
     </PageDefault>
   );
 }
