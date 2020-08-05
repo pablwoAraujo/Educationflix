@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 export const StyledButtonLink = styled(Link)`
     color: var(--white);
-    border: 1px solid var(--white);
+    border: 1px solid var(--primary);
     background: var(--black);
+    margin: 20px;
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;

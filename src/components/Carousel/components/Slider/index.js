@@ -17,10 +17,14 @@ const Container = styled.ul`
     height: 30px;
     transform: initial;
     &:before {
-      font-size: 30px;
-    }
+      font-size: 50px;
+    };
+    opacity: .3;
+    &:hover,
+    &:focus {
+      opacity: .8; 
   }
-  
+  }
   .slick-prev {
     left: 0;
   }
@@ -30,7 +34,9 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 16px;
+  /* margin-right: 16px; */
+  border-top: 2px solid var(--primary);
+
   img {
     margin: 16px;
     width: 298px;
@@ -43,7 +49,7 @@ const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,

@@ -32,7 +32,7 @@ function Carousel({
           if (ignoreFirstVideo && index === 0) {
             return null;
           }
-
+          //  border-top: 2px solid var(--primary);
           return (
             <SliderItem key={video.titulo}>
               <VideoCard

@@ -91,11 +91,6 @@ function CadastroCategoria() {
           />
 
           <Button>Cadastrar</Button>
-
-          <br />
-          <br />
-          <br />
-
           <StyledButtonLink to="/">
             Home
           </StyledButtonLink>
