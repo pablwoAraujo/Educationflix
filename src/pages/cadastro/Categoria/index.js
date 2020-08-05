@@ -3,6 +3,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import Loader from '../../../components/Loader';
 import categoriasRepositories from '../../../repositories/categorias';
 
 import {
@@ -30,6 +31,9 @@ function CadastroCategoria() {
 
   return (
     <PageDefault>
+
+      {categorias.length === 0 && (<Loader />)}
+
       <h1>
         Cadastro de Categoria:
         {values.titulo}
@@ -95,12 +99,6 @@ function CadastroCategoria() {
             Home
           </StyledButtonLink>
         </form>
-
-        {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
-        )}
 
         <StyledLi>
           <>

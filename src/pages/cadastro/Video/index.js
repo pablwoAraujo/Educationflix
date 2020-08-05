@@ -45,7 +45,6 @@ function CadastroVideo() {
             categoriaId: catEscolhida.id,
           })
             .then(() => {
-              console.log('Cadastrou com sucesso!');
               history.push('/');
             });
         }}
