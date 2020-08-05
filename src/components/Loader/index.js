@@ -15,7 +15,7 @@ const Spinner = styled.div`
   }
 `;
 
-const ArroundSpinner = styled.div`
+const SurroundSpinner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -24,9 +24,9 @@ const ArroundSpinner = styled.div`
 
 function Loader() {
   return (
-    <ArroundSpinner>
+    <SurroundSpinner>
       <Spinner />
-    </ArroundSpinner>
+    </SurroundSpinner>
 
   );
 }
