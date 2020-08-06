@@ -10,6 +10,8 @@
 
 Educationflix - É uma plataforma de vídeos inspirado na Netflix que reune diversas playlists de videos educativos dos mais variados temas, onde o usuario pode interagir adicionando novos videos nas categorias presentes, ou pode criar sua propria categoria e compartilhar seus videos preferidos sobre o tema.
 
+> Disponível em https://educationflix.vercel.app/
+
 ## Como rodar o projeto?
 
 ```
