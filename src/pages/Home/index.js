@@ -29,10 +29,10 @@ function Home() {
               <BannerMain
                 videoTitle={dadosIniciais[0].videos[0].titulo}
                 url={dadosIniciais[0].videos[0].url}
-                videoDescription="teste"
+                videoDescription="Veja este e outros vídeos educativos nas playlists abaixo"
               />
               <Carousel
-                ignoreFirstVideo
+                // ignoreFirstVideo
                 category={dadosIniciais[0]}
               />
             </div>

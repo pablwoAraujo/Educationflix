@@ -15,7 +15,7 @@ function CadastroCategoria() {
     titulo: '',
     cor: '#FF0000',
     link_extra: {
-      text: '',
+      text: 'Ver mais',
       url: '',
     },
   };
@@ -48,7 +48,7 @@ function CadastroCategoria() {
             titulo: values.titulo,
             cor: values.cor,
             link_extra: {
-              text: values.text,
+              text: 'Ver mais',
               url: values.url,
             },
           });
@@ -70,13 +70,13 @@ function CadastroCategoria() {
             onChange={handleChange}
           />
 
-          <FormField
+          {/* <FormField
             label="Text"
             type="text"
             name="text"
             value={values.text}
             onChange={handleChange}
-          />
+          /> */}
 
           <FormField
             label="Url"

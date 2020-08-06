@@ -20,6 +20,23 @@ function create(objetoDoVideo) {
     });
 }
 
+function remove(id) {
+  return fetch(`${URL_VIDEOS}/videos/${id}`, {
+    method: 'Delete',
+    headers: {
+      'Content-type': 'application/json',
+    },
+  })
+    .then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        console.log('dale');
+        return resposta;
+      }
+      throw new Error('Não foi possível remover o video :(');
+    });
+}
+
 export default {
-  create,
+  create, remove,
 };
