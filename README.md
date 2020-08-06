@@ -14,10 +14,10 @@ Educationflix - É uma plataforma de vídeos inspirado na Netflix que reune dive
 
 ```
 # Clone este repositório
-$ git clone https://github.com/pablwoAraujo/aluraflix
+$ git clone https://github.com/pablwoAraujo/Educationflix
 
 # Acesse a pasta do projeto
-$ cd aluraflix
+$ cd Educationflix
 
 # Instale as dependências
 $ npm install
