@@ -22,7 +22,7 @@
   "videos": [
     {
       "id": 1,
-      "categoria": "Biologia",
+      "categoriaId": 2,
       "titulo": "CITOLOGIA | QUER QUE DESENHE? | DESCOMPLICA",
       "url": "https://youtu.be/rjH2xzCwNx0"
     }
