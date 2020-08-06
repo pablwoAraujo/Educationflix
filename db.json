@@ -2,22 +2,22 @@
   "categorias": [
     {
       "id": 1,
-      "titulo": "Geografia",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Ver mais",
-        "url": "https://www.youtube.com/playlist?list=PL2Znz6U0vJHUN75Ujt-HOzJilV4v-xX79"
-      }
-    },
-    {
-      "id": 2,
       "titulo": "Biologia",
       "cor": "#11FF00",
       "link_extra": {
         "text": "Ver mais",
         "url": "https://youtu.be/rjH2xzCwNx0"
       }
-    }    
+    },  
+    {
+      "id": 2,
+      "titulo": "Geografia",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Ver mais",
+        "url": "https://www.youtube.com/playlist?list=PL2Znz6U0vJHUN75Ujt-HOzJilV4v-xX79"
+      }
+    }
   ],
   "videos": [
     {
